@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Audiowide';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    width: 1200px;
+    height: 1800px;
+}
+
+.planet {
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.planet-teal {
+    top: 13%;
+    left: 22%;
+    width: auto;
+    height: auto;
+    opacity: 0.35;
+}
+
+.planet-red {
+    bottom: 8%;
+    left: -15%;
+    width: auto;
+    height: auto;
+    opacity: 0.35;
+}
+
+.planet-green {
+    bottom: 23%;
+    right: -15%;
+    width: auto;
+    height: auto;
+    opacity: 0.35;
+}
+
+.planet-teal img {
+    width: 450px;
+    height: 450px;
+}
+
+.planet-green img {
+    width: 600px;
+    height: 600px;
+}
+
+.planet-red img {
+    width: 750px;
+    height: 750px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    background-color: rgba(45, 45, 45, 0.5);
+    border: rgba(45, 45, 45, 45) solid 0.2rem;
+    color: white;
+    backdrop-filter: blur(5px);
+    padding: 6rem;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Audiowide';
+    font-size: 64px;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+}
+
+p {
+    font-family: 'Audiowide';
+    font-size: 32px;
+    margin-bottom: 3.5rem;
+}
+
+button {
+    background-color: #9D50FF;
+    color: white;
+    border: none;
+    padding: 0.75rem 3rem;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    z-index: 3;
+}
+
+nav {
+    background-color: rgba(45, 45, 45, 0.5);
+    border: rgba(45, 45, 45, 45) solid 0.2rem;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.home-btn img {
+    width: 6rem;
+    height: 4.5rem;
+}
+
+.home-btn {
+    margin-left: 7%;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+}
