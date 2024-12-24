@@ -108,14 +108,14 @@ main {
 }
 
 h1 {
-    font-family: 'Audiowide';
+    font-family: Audiowide, sans-serif;
     font-size: 64px;
     margin-bottom: 2.5rem;
     line-height: 1.2;
 }
 
 p {
-    font-family: 'Audiowide';
+    font-family: Audiowide, sans-serif;
     font-size: 32px;
     margin-bottom: 3.5rem;
 }
