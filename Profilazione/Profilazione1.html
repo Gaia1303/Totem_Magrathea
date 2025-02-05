@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    <title>Profilazione1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <title>Profilazione0</title>
+    <link rel="stylesheet" href="css/generalBS.css">
+    <style>
+        /* Custom styles here */
+        .main-container {
+            position: fixed;
+            top: 30px;
+            right: 60px;
+            left: 60px;
+            bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10rem;
+        }
+
+        .title {
+            margin-bottom: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .boxes-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .content-box1, .content-box2, .content-box3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(6px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 3rem;
+            width: 500px;
+            height: 600px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .content-box2 {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+
+        .selected {
+            border: 10px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .continue-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .planet {
+            position: fixed;
+            opacity: 0.4;
+        }
+
+        .planet-teal {
+            top: 8%;
+            left: 10%;
+            width: 45%;
+            max-width: 1400px;
+        }
+
+        .planet-red {
+            bottom: 7%;
+            left: -15%;
+            width: 60%;
+            max-width: 1400px;
+        }
+
+        .planet-green {
+            bottom: 25%;
+            left: 65%;
+            width: 55%;
+            max-width: 1400px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row header align-items-center">
+        <div class="col-6 text-start">
+            <img class="logo img-fluid" src="img/logo.png" alt="Logo">
+        </div>
+        <div class="col-6 text-end">
+            <div id="current-time"></div>
+        </div>
+    </div>
+
+    <div class="planets">
+        <img class="planet planet-teal" src="img/Hielo.png" srcset="img/Hielo.png 2600w" sizes="(max-width: 1400px) 1000px" alt="Hielo">
+        <img class="planet planet-red" src="img/Kalyton.png" srcset="img/Kalyton.png 2600w" sizes="(max-width: 1400px) 1400px" alt="Kalyton">
+        <img class="planet planet-green" src="img/Velurion.png" srcset="img/Velurion.png 2600w" sizes="(max-width: 1400px) 1200px" alt="Velurion">
+    </div>
+
+    <main class="main-container">
+        <h1 class="title">Quale anima guida il tuo viaggio?</h1>
+        <div class="boxes-container">
+            <div class="content-box1">
+                <p>Il guardiano della famiglia</p>
+            </div>
+            <div class="content-box2">
+                <p>Lo studioso curioso</p>
+            </div>
+            <div class="content-box3">
+                <p>L’esploratore alla ricerca di nuove frontiere</p>
+            </div>
+        </div>
+        <a href="Profilazione2.html">
+            <button class="btn continue-button select-button text-white">Continua</button>
+        </a>
+    </main>
+
+    <div class="navigation-bar">
+        <img class="nav" src="img/barra-nav.png" alt="barra-nav">
+        <img class="home-button" src="img/home-button.png" alt="home">
+        <img class="back-button" src="img/back.button.png" alt="back-button">
+        <img class="accessibilità-button" src="img/accessibilità-button.png" alt="accessibilità">
+        <img class="lingue-button" src="img/lingue-button.png" alt="lingue-button">
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}`;
+            document.getElementById('current-time').textContent = timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 60000);
+
+        const boxes = document.querySelectorAll('.content-box1, .content-box2, .content-box3');
+        const continueButton = document.querySelector('.continue-button');
+
+        continueButton.disabled = true;
+
+        boxes.forEach(box => {
+            box.addEventListener('click', () => {
+                boxes.forEach(b => b.classList.remove('selected'));
+                box.classList.add('selected');
+                continueButton.disabled = false;
+            });
+        });
+
+        continueButton.addEventListener('click', () => {
+            const selectedBox = document.querySelector('.selected');
+            if (selectedBox) {
+                const boxNumber = selectedBox.classList[0].slice(-1);
+                console.log(`Box ${boxNumber} was selected`);
+            }
+        });
+    </script>
+</body>
+</html>
