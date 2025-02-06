@@ -42,7 +42,7 @@
     border: none;
 }
 
-.lista-orari {
+/*.lista-orari {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -51,4 +51,40 @@
 
 .img-orario {
     width: 100%;
+}*/
+
+.departures-list {
+    margin-top: 100px;
+}
+
+.departures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+    border-radius: 40px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.trans-code {
+    padding: 80px;
+    margin: 0px;
+    border-radius: 30px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+}
+
+.gate {
+    padding: 80px;
+    margin: 0px;
+    border-radius: 30px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+}
+
+.track-img {
+    width: 30%;
 }
