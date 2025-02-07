@@ -76,6 +76,8 @@
     margin: 0px;
     border-radius: 30px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+    width: 250px;
+    text-align: center;
 }
 
 .gate {
@@ -83,6 +85,8 @@
     margin: 0px;
     border-radius: 30px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+    width: 140px;
+    text-align: center;
 }
 
 .track-img {
