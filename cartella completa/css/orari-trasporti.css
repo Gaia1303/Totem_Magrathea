@@ -1,0 +1,96 @@
+.scelta-sat {
+    display: flex;
+    flex-direction: column;
+}
+
+.sat-velurion, .sat-kalyton, .sat-hielo {
+    width: 100%;
+    height: 605px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.33); /* Valore alpha da 0 a 1 */
+    margin-top: 100px;
+    position: relative;
+}
+
+.img-sat {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title-sat {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    margin: 0px;
+}
+
+.select-button {
+    position: absolute;
+    left: 13%;
+    bottom: 25%;
+}
+
+/*.lista-orari {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.img-orario {
+    width: 100%;
+}*/
+
+.departures-list {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.departures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+    border-radius: 40px;
+    margin-bottom: 3rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.trans-code {
+    padding: 75px;
+    margin: 0px;
+    border-radius: 30px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+    width: 25%;
+    text-align: center;
+}
+
+.gate {
+    padding: 75px;
+    margin: 0px;
+    border-radius: 30px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
+    width: 20%;
+    text-align: center;
+}
+
+.track-img {
+    width: 30%;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    margin-top: 60px;
+}
