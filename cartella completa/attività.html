@@ -182,7 +182,27 @@
 </div>
 
 <!--carosello-->
+<div class="bottom-part">
+    <h3>Eventi in evidenza</h3>
+    <div class="cards-container">
+        <div class="card-item">
+            <a href="#" class="card-link">
+                <img class="card-image" src="/img/battito.svg" alt="Battito Radiante">
+                <div class="food-title"><h4>Battito Radiante</h4></div>
+            </a></div>
+        <div class="card-item">
+            <a href="#" class="card-link">
+                <img class="card-image" src="/img/Fungolandia.svg" alt="Avventura a Fungolandia">
+                <div class="food-title"><h4>Avventura a Fungolandia</h4></div>
+            </a></div>
+        <div class="card-item">
+            <a href="#" class="card-link">
+                <img class="card-image" src="/img/respiro.svg" alt="Il Respiro Verde">
+                <div class="food-title"><h4>Il Respiro Verde</h4></div>
+            </a></div>
 
+    </div>
+</div>
 
 
 
@@ -215,25 +235,6 @@
     // Imposta subito l'orario all'inizio
     updateTime();
 
-    const swiper = new Swiper('.card-wrapper', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            dynamicBullets: true
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-
-    });
 
     document.querySelector('.back-button').addEventListener('click', function () {
         window.location.href = 'ProfilazioneEnd.html';
