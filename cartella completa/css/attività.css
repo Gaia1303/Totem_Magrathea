@@ -216,30 +216,6 @@ ul {
 }
 
 
-
-.swiper-button-next, .swiper-button-prev {
-    color: white;
-}
-
-
-.swiper-pagination-bullet {
-    background-color: white;
-    opacity: 0.5;
-    margin: 10px !important;
-    width: 10px;
-    height: 10px;
-}
-
-.swiper-pagination {
-    margin-bottom: 0;
-
-}
-
-.swiper-pagination-bullet-active {
-    background-color: white;
-    opacity: 1;
-}
-
 .card-link {
     position: relative;
     display: inline-block;
@@ -248,4 +224,29 @@ ul {
 .card-image {
     display: block;
     width: 100%;
+}
+
+
+.bottom-part {
+    max-width: 2000px;
+    background: rgba(255, 255, 255, 0.17) !important;
+    backdrop-filter: blur(80px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-top: 3px solid rgba(255, 255, 255, 0.25) !important;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    width: 2000px;
+    height: 700px;
+    margin-left: -100px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.bottom-part>h3 {
+    margin: 30px;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
