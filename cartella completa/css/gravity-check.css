@@ -79,3 +79,69 @@ button>p {
 .cancel-button {
     margin-top: 100px;
 }
+
+/*modal*/
+.custom-modal-size {
+    max-width: 1000px; /* Cambia la larghezza */
+    width: 90%; /* Adatta alla finestra */
+}
+
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.17) !important; /* Sfondo semi-trasparente */
+    backdrop-filter: blur(80px) !important; /* Sfocatura */
+    -webkit-backdrop-filter: blur(10px) !important; /* Sfocatura per Safari */
+    border-radius: 20px !important; /* Angoli arrotondati */
+    border: 3px solid rgba(255, 255, 255, 0.25) !important; /* Bordo semi-opaco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Ombreggiatura leggera */
+    text-align: center;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    background: transparent; /* Rimuovi lo sfondo */
+    color: white !important; /* Colore bianco per il testo */
+    border: none !important;
+}
+
+.modal-header {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.modal-body>h2 {
+    text-align: center;
+}
+
+.modal-body {
+    padding: 70px !important; /* Aggiunge padding solo al corpo del modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-close {
+    filter: invert(1); /* Inverte il colore dell'icona x per renderla bianca */
+    opacity: 1; /* Rimuove la trasparenza */
+}
+
+.modal-footer {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #f3f3f3; /* Colore di sfondo */
+    border-top: 5px solid #9D50FF; /* Colore animato */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
