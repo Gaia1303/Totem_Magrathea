@@ -1,0 +1,171 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Assicura che il body si espanda oltre la viewport */
+}
+
+body {
+    background-image: url('Sfondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    max-height: 3000px; 
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Exo', sans-serif;
+    color: white;
+    font-size: 2.9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Audiowide', sans-serif;
+}
+
+h1 {
+    font-size: 9.6rem;
+    text-align: center;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 6.5rem;
+}
+
+h3 {
+    font-size: 4.8rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 3.5rem;
+}
+
+h5 {
+    font-size: 2.7rem;
+}
+
+h6 {
+    font-size: 2.3rem;
+}
+
+.titleking {
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 2.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#current-time {
+    font-size: 3.5rem;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.logo {
+    width: 192px;
+    height: auto;
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.navigation-bar {
+    position: absolute; 
+    bottom: 30px;       
+    left: 0;           
+    width: 100%;        
+    text-align: center;   
+    margin: 0;
+}
+
+.nav {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.home-button {
+    position: absolute; 
+    top: 50%;           /* Centra verticalmente rispetto alla barra */
+    left: 50%;          /* Centra orizzontalmente rispetto alla barra */
+    transform: translate(-50%, -50%); /* Centra il pulsante esattamente al centro */
+    z-index: 100;        /* Assicura che sia sopra l'immagine nav */
+    width: 160px;        
+    height: auto;       
+}
+
+.back-button {
+    position: absolute; 
+    top: 50%;           
+    left: 8%;         
+    transform: translate(-50%, -50%); 
+    z-index: 100;        
+    width: 96px;        
+    height: 96px; 
+}
+
+.accessibilita-button {
+    position: absolute; 
+    top: 50%;           
+    left: 85%;         
+    transform: translate(-50%, -50%); 
+    z-index: 100;        
+    width: 96px;        
+    height: 96px; 
+}
+
+.lingue-button {
+    position: absolute; 
+    top: 50%;           
+    left: 92%;         
+    transform: translate(-50%, -50%); 
+    z-index: 100;        
+    width: 96px;        
+    height: 96px;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.imagesat{
+    width: 700px;
+    height: auto;
+}
+
+.sat{
+    margin-top: -100px;
+}
+
+.custom-btn{
+    padding: 30px 60px;
+    width: 850px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.152);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.text-button{
+    color: white; 
+    font-weight: bold;
+    font-family: 'Audiowide', sans-serif;
+    z-index: 1000;
+    font-size: 3.5rem;
+}
+
