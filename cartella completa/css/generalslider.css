@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Assicura che il body si espanda oltre la viewport */
+}
+
+body {
+    width: auto;
+    max-height: 3000px; 
+    padding: 0 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Exo', sans-serif;
+    color: white;
+    font-size: 2.9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Audiowide', sans-serif;
+}
+
+h1 {
+    font-size: 9.6rem;
+    text-align: center;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 6.5rem;
+}
+
+h3 {
+    font-size: 4.8rem;
+}
+
+h4 {
+    font-size: 3.5rem;
+}
+
+h5 {
+    font-size: 2.7rem;
+}
+
+h6 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 2.9rem;
+    line-height: 1.5;
+}
+
+
+/* Adatta l'immagine per coprire lo spazio */
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-item::before {
+    content: ""; /* Necessario per creare l'elemento pseudo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.694) 100%);
+    z-index: 1; /* Assicura che l'overlay sia sopra l'immagine */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 300px; 
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 60px;
+    text-align: center; /* Centra il testo orizzontalmente */
+    color: white; /* Colore del testo */
+    z-index: 1000;
+}
+
+.first-p{
+    font-size: 3.6rem;
+}
+
+.slider {
+    position: absolute;  /* Esce dal flusso normale del documento */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Occupa tutta la larghezza dello schermo */
+    height: 100vh; /* Occupa tutta l'altezza dello schermo */
+}
+
+.image-tap{
+    bottom: 650px; 
+    right: 300px; 
+    z-index: 1050;
+    width: 450px;
+    height: auto;
+}
+
+.carousel-indicators button {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 9px !important;
+    border-radius: 50% !important;
+    opacity: 0.5 !important;
+}
+
+/* Rendi il pallino attivo più grande */
+.carousel-indicators .active {
+    width: 45px !important;
+    height: 45px !important;
+    background-color: #fbfbfbf8 !important; /* Cambia colore */
+    opacity: 1 !important;
+}
+
