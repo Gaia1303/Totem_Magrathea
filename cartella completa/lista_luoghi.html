@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <title>Template base</title>
+  <link rel="stylesheet" href="css/lista_luoghi.css">
+  <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+<!-- Intestazione -->
+<div class="header">
+  <img class="logo" src="img/logo.png" alt="logo">
+  <div id="current-time"></div>
+</div>
+
+<!-- Contenuto -->
+<h1 class="title">I luoghi di Velurion</h1>
+<section class="second-swiper">
+  <!-- Swiper-->
+  <div class="container swiper">
+    <h3>Le località del nord</h3>
+    <div class="card-wrapper">
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="infoLuoghi.html" class="card-link">
+            <img class="card-image" src="img/foresta2.svg" alt="Foresta di funghi">
+            <div class="food-title"><h4>Foresta di funghi</h4></div>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link" id="card-no-click">
+            <img class="card-image" src="img/salice.svg" alt="Salici bioluminescenti">
+            <div class="food-title"><h4>Salici bioluminescenti</h4></div>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img class="card-image" src="img/dedalo.svg" alt="Dedalo di spore">
+            <div class="food-title"><h4>Dedalo di spore</h4></div>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img class="card-image" src="img/montagne.svg" alt="Montagne Velurias">
+            <div class="food-title"><h4>Montagne Velurias</h4></div>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img class="card-image" src="img/sci.svg" alt="Impianti sciistici">
+            <div class="food-title"><h4>Impianti sciistici</h4></div>
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  </section>
+
+  <section class="second-swiper">
+
+    <!-- Swiper-->
+    <div class="container swiper">
+      <h3>Le località del centro</h3>
+      <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img class="card-image" src="img/lymbrax.svg" alt="Lymbrax">
+              <div class="food-title"><h4>Lymbrax: il cuore luminescente</h4></div>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img class="card-image" src="img/grotta.svg" alt="Grotta di Xhyphor">
+              <div class="food-title"><h4>Grotta di Xyphor</h4></div>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img class="card-image" src="img/santuario.svg" alt="Il Santuario di Zelther">
+              <div class="food-title"><h4>Il Santuario di Zelthar</h4></div>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img class="card-image" src="img/nebbia.svg" alt="Nebbia di Nyxil">
+              <div class="food-title"><h4>Nebbia di Nyxil</h4></div>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img class="card-image" src="img/cascata.svg" alt="Le Cascate di Lirenthia">
+              <div class="food-title"><h4>Le Cascate di Lirenthia</h4></div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    </section>
+
+    <section class="second-swiper">
+      <!-- Swiper-->
+      <div class="container swiper">
+        <h3>Le località del sud</h3>
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img class="card-image" src="img/dune.svg" alt="Dune di Velythar">
+                <div class="food-title"><h4>Dune di Velythar</h4></div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img class="card-image" src="img/abissi.svg" alt="Abissi di Nocthys">
+                <div class="food-title"><h4>Abissi di Nocthys</h4></div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img class="card-image" src="img/palude.svg" alt="Paludi di Zyrren">
+                <div class="food-title"><h4>Paludi di Zyrren</h4></div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img class="card-image" src="img/eshraal.svg" alt="Monti di Eshraal">
+                <div class="food-title"><h4>Monti di Eshraal</h4></div>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img class="card-image" src="img/baia.svg" alt="Baia di Luthenmaar">
+                <div class="food-title"><h4>Baia di Luthenmaar</h4></div>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+</section>
+
+
+
+<!-- Barra Navigazione -->
+<div class="navigation-bar">
+  <img class="nav img-fluid" src="img/barra-nav.png" alt="Navigation bar">
+  <img class="home-button" src="img/home-button.png" alt="Home">
+  <img class="back-button" src="img/back.button.png" alt="Back">
+  <img class="accessibility-button" src="img/accessibilità-button.png" alt="Accessibility">
+  <img class="lang-button" src="img/lingue-button.png" alt="Languages">
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12WJLzYVnvkSfZl5VVbILFL4HVWMI0o8j4ZE3e9lbiKQnBkI" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- Script JS -->
+<script>
+  function updateTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const timeString = `${hours}:${minutes}`;
+    document.getElementById('current-time').textContent = timeString;
+  }
+
+  // Aggiorna l'orario ogni minuto
+  setInterval(updateTime, 60000);
+  // Imposta subito l'orario all'inizio
+  updateTime();
+
+  //second swiper script
+  const swiper = new Swiper('.card-wrapper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+
+  });
+
+  // Collegamento back button
+ /* document.querySelector('.back-button').addEventListener('click', function () {
+    window.history.back();
+  });*/
+
+  document.querySelector('.back-button').addEventListener('click', function () {
+    window.history.back();
+  });
+
+
+</script>
+<!--<script src="lista_luoghi.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

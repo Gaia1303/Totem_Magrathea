@@ -21,7 +21,6 @@
     <img class="logo" src="img/logo.png" alt="logo">
     <div id="current-time"></div>
 </div>
-
 <div class="velurion">
 <img class="planet planet-green" src="img/Pianeta-Velurion.png" srcset="img/Pianeta-Velurion.png 2600w" sizes="(max-width: 1400px) 1200px" alt="Velurion">
 </div>
@@ -45,9 +44,32 @@
         <img src="img/gravity%20board.svg" alt="gravity board"><br>
     </div>
     <div class="button-div">
-        <button class="select-button"><p>Testa la gravità</p></button>
+        <button type="button" class="select-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <p>Testa la gravità</p>
+        </button>
     </div>
 </div>
+
+
+    <!-- Modal gravità -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog custom-modal-size">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Preparati al flusso gravitazionale</p>
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+
+
 
 <div class="other-planets">
     <h3>Prova la gravità sugli <br>altri satelliti</h3>
@@ -85,6 +107,10 @@
     setInterval(updateTime, 60000);
     // Imposta subito l'orario all'inizio
     updateTime();
+
+    document.querySelector('.back-button').addEventListener('click', function () {
+        window.history.back();
+    });
 
 </script>
 

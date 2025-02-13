@@ -1,0 +1,230 @@
+
+/*parte in alto*/
+
+.container-top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+#description>h1 {
+    text-align: left;
+    margin: 0;
+}
+
+#description>p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img-velurion {
+    display: flex;
+    flex-direction: column;
+}
+
+#velurion>img {
+    width: 800px;
+    height: 800px;
+    margin-top: -50px;
+}
+
+.distance-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 100px;
+    gap: 80px;
+}
+
+.distance-h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.custom-table {
+    width: 100%;
+    max-width: 2000px; /* Larghezza massima */
+    margin: 20px auto; /* Centra la tabella */
+    border-collapse: collapse; /* Unisce i bordi */
+    color: white;
+}
+
+.custom-table th, .custom-table td{
+    padding: 10px 15px; /* Spaziatura interna */
+    text-align: left;
+}
+
+
+.custom-table tr {
+    border-bottom: 1px solid white; /* Bordo inferiore bianco */
+}
+
+
+
+/*carosello*/
+
+.carousel-inner{
+    height: 900px;
+}
+
+.carousel {
+    display: flex;
+    width: 2000px;
+    margin-left: -100px;
+}
+.carousel-indicators button {
+    width: 50px; /* Larghezza maggiore */
+    height: 50px; /* Altezza maggiore */
+    border-radius: 50%; /* Forma circolare */
+    background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo personalizzato */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/*container-bottom*/
+
+.container-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 120px;
+    margin-top: 35px;
+}
+
+#container-bottom>button>img {
+    width: 500px;
+    height: 500px;
+}
+
+/*modal*/
+
+
+.modal-lg-custom {
+    max-width: 80% !important; /* Imposta una larghezza fissa */
+}
+
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.17) !important; /* Sfondo semi-trasparente */
+    backdrop-filter: blur(80px) !important; /* Sfocatura */
+    -webkit-backdrop-filter: blur(10px) !important; /* Sfocatura per Safari */
+    border-radius: 20px !important; /* Angoli arrotondati */
+    border: 3px solid rgba(255, 255, 255, 0.25) !important; /* Bordo semi-opaco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Ombreggiatura leggera */
+}
+
+.modal-header, .modal-body, .modal-footer {
+    background: transparent; /* Rimuovi lo sfondo */
+    color: white !important; /* Colore bianco per il testo */
+    border: none !important;
+}
+
+.modal-header {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.modal-body>h2 {
+    text-align: center;
+}
+
+.modal-body {
+    padding: 50px !important; /* Aggiunge padding solo al corpo del modal */
+}
+
+.btn-close {
+    filter: invert(1); /* Inverte il colore dell'icona x per renderla bianca */
+    opacity: 1; /* Rimuove la trasparenza */
+}
+
+.img {
+    border-radius: 20px;
+}
+
+.colImg img {
+    width: 100%; /* L'immagine occuperà tutta la larghezza della colonna */
+    height: 600px; /* Mantiene il rapporto d'aspetto dell'immagine */
+    object-fit: cover;
+}
+
+.colText {
+    width: 100%;
+}
+
+.custom-box {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-block {
+    margin-top:70px;
+    margin-bottom: 70px;
+}
+
+.column {
+    width: 100%;
+}
+
+.column img {
+    width: 100%; /* L'immagine occuperà tutta la larghezza della colonna */
+    height: 450px; /* Mantiene il rapporto d'aspetto dell'immagine */
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0) !important; /* Cambia colore di sfondo */
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+.select-button {
+    background-color: #9D50FF;
+    border: 3px solid #9D50FF;
+    border-radius: 20px;
+}
+
+button {
+    position: relative;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.discover {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    background: transparent;
+    color: white;
+    padding: 50px;
+    text-shadow: black 5px 5px 5px;
+}
+
+.pointer {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+
+}
