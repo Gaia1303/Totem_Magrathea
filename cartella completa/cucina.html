@@ -312,7 +312,7 @@
 <!-- Barra Navigazione-->
 <div class="navigation-bar">
     <img class="nav img-fluid" src="img/barra-nav.png" alt="Navigation bar">
-    <img class="home-button" src="img/home-button.png" alt="Home">
+    <a href="index.html"><img class="home-button" src="img/home-button.png" alt="Home"></a>
     <img class="back-button" src="img/back.button.png" alt="Back">
     <img class="accessibility-button" src="img/accessibilità-button.png" alt="Accessibility" data-bs-toggle="modal" data-bs-target="#accesModal">
     <img class="lang-button" src="img/lingue-button.png" alt="Languages" data-bs-toggle="modal" data-bs-target="#languageModal">
@@ -325,7 +325,7 @@
 
 <!-- Script JS -->
 <script>
-    <!-- Hours -->
+    //Hours
     function updateTime() {
         const now = new Date();
         const hours = now.getHours().toString().padStart(2, '0');
@@ -336,8 +336,13 @@
     setInterval(updateTime, 60000);
     updateTime();
 
+    //Back button
+    document.querySelector('.back-button').addEventListener('click', function () {
+        window.history.back();
+    });
 
-    <!-- Swiper script -->
+
+    //Swiper script
     const swiper = new Swiper('.card-wrapper', {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -357,7 +362,7 @@
     });
 
 
-    <!-- Accessibility modal script-->
+    //Accessibility modal script
     const cards = document.querySelectorAll('.acces-card');
     cards.forEach(card => {
         card.addEventListener('click', () => {
@@ -370,15 +375,14 @@
         });
     });
 
-    <!-- Language modal script-->
+    //Language modal script
     document.querySelectorAll('.language-item').forEach(item => {
         item.addEventListener('click', function() {
-            // Controlla se l'elemento è già selezionato
             if (this.classList.contains('selected')) {
-                this.classList.remove('selected'); // Se è selezionato, lo deseleziona
+                this.classList.remove('selected');
             } else {
                 document.querySelectorAll('.language-item').forEach(el => el.classList.remove('selected'));
-                this.classList.add('selected'); // Se non è selezionato, lo seleziona
+                this.classList.add('selected');
             }
         });
     });
