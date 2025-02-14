@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%; /* Assicura che il body si espanda oltre la viewport */
+    min-height: 100%;
 }
 
 body {
@@ -110,10 +110,10 @@ button {
 
 .home-button {
     position: absolute; 
-    top: 50%;           /* Centra verticalmente rispetto alla barra */
-    left: 50%;          /* Centra orizzontalmente rispetto alla barra */
-    transform: translate(-50%, -50%); /* Centra il pulsante esattamente al centro */
-    z-index: 100;        /* Assicura che sia sopra l'immagine nav */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
     width: 160px;        
     height: auto;       
 }
@@ -147,3 +147,177 @@ button {
     width: 96px;        
     height: 96px;
 }
+
+
+/* Css Modals*/
+
+/* Modal general*/
+
+.modal-lg-custom {
+    max-width: 80% !important;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.17) !important;
+    backdrop-filter: blur(80px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    background: transparent;
+    color: white !important;
+    border: none !important;
+}
+
+.modal-body {
+    padding: 0 50px 50px 50px !important;
+}
+
+.btn-close {
+    filter: invert(1);
+    opacity: 1;
+    padding: 20px !important;
+}
+
+#exampleModal .modal-content img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+/*Modal Accessibility */
+
+.accessibility-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 .accessibility-title {
+    margin-top: 0;
+}
+
+.accessibility {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.acces-row {
+    display: flex;
+    gap: 30px;
+}
+
+.acces-card {
+    width: 100%;
+    height: 450px;
+    flex:1;
+    background: rgba(255, 255, 255, 0.2) ;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    margin:10px;
+}
+
+.acces-option {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.acces-card.selected {
+    border: 5px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.4);
+    /*
+    border: 3px solid rgba(157, 80, 255, 1);
+    box-shadow: 0 0 0 20px rgba(157, 80, 255, 0.25);
+    background-color: rgba(157, 80, 255, 0.25);
+    */
+}
+
+.acces-buttons {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navigation-bar {
+    position: fixed;
+    z-index: 1051;
+}
+
+/* Modal Language*/
+
+#languageModal .modal-lg-custom {
+    max-width: 60% !important;
+}
+
+.language-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.language-list {
+    max-height: 600px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+}
+
+.language-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.language-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.language-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.language-item {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    margin: 10px;
+}
+
+.language-item.selected {
+    border: 5px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.4);
+    /*
+    border: 3px solid rgba(157, 80, 255, 1);
+    box-shadow: 0 0 0 20px rgba(157, 80, 255, 0.25);
+    background-color: rgba(157, 80, 255, 0.25);
+    */
+}
+
+.language-buttons {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 50px;
+}
+
