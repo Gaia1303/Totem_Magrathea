@@ -41,7 +41,7 @@ h3 {
 }
 
 
-button {
+/*button {
     color: white;
     font-family: 'Exo', sans-serif;
     font-size: 2.0rem;
@@ -49,7 +49,7 @@ button {
     padding: 1rem 3rem;
     border-radius: 20px;
     cursor: pointer;
-}
+}*/
 
 button>p {
     margin-bottom: 0;
@@ -76,7 +76,7 @@ button>p {
     max-width: 2000px;
 }
 
-.cancel-button {
+.other-planets>.cancel-button {
     margin-top: 100px;
 }
 
@@ -111,7 +111,7 @@ button>p {
     text-align: center;
 }
 
-.modal-body {
+.modal-body-gravity {
     padding: 70px !important; /* Aggiunge padding solo al corpo del modal */
     display: flex;
     justify-content: center;

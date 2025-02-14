@@ -115,7 +115,7 @@
 }
 
 
-.modal-content {
+.modal-content-my {
     background: rgba(255, 255, 255, 0.17) !important; /* Sfondo semi-trasparente */
     backdrop-filter: blur(80px) !important; /* Sfocatura */
     -webkit-backdrop-filter: blur(10px) !important; /* Sfocatura per Safari */
@@ -134,11 +134,11 @@
     margin-right: 30px;
     margin-top: 30px;
 }
-.modal-body>h2 {
+.modal-body-mio>h2 {
     text-align: center;
 }
 
-.modal-body {
+.modal-body-mio {
     padding: 50px !important; /* Aggiunge padding solo al corpo del modal */
 }
 
@@ -147,13 +147,13 @@
     opacity: 1; /* Rimuove la trasparenza */
 }
 
-.img {
+.modal-body-mio>img {
     border-radius: 20px;
 }
 
 .colImg img {
-    width: 100%; /* L'immagine occuperà tutta la larghezza della colonna */
-    height: 600px; /* Mantiene il rapporto d'aspetto dell'immagine */
+    width: 100%;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -172,13 +172,16 @@
     margin-bottom: 70px;
 }
 
+
 .column {
     width: 100%;
-}
-
-.column img {
-    width: 100%; /* L'immagine occuperà tutta la larghezza della colonna */
-    height: 450px; /* Mantiene il rapporto d'aspetto dell'immagine */
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
 .btn-primary {
@@ -227,4 +230,34 @@ h4 {
     width: 150px;
     height: 150px;
 
+}
+
+.activities {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.activities>h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.activities img {
+    width: 100%;
+    height: 100%;
+}
+
+.acces-card>img {
+padding-bottom: 100px;
+}
+
+.acces-card>h4 {
+    text-shadow: none;
+}
+
+a>h4 {
+    color: white;
 }
