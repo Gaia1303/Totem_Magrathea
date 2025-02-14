@@ -272,6 +272,7 @@ ul {
 
 .accessibility-title {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 h2 .accessibility-title {
@@ -281,12 +282,12 @@ h2 .accessibility-title {
 .accessibility {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 30px;
 }
 
 .acces-row {
     display: flex;
-    gap: 2rem;
+    gap: 30px;
 }
 
 .acces-card {
@@ -302,7 +303,7 @@ h2 .accessibility-title {
     justify-items: center;
     align-content: center;
     justify-content: center;
-    padding: 3rem;
+    padding: 50px;
     /*transition: all 0.3s ease;*/
     margin:10px;
 }
@@ -325,9 +326,10 @@ h2 .accessibility-title {
 
 .acces-buttons {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
     justify-content: center;
-    gap: 3rem;
+    gap: 50px;
 }
 
 .navigation-bar {
@@ -343,6 +345,7 @@ h2 .accessibility-title {
 
 .language-title {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .language-list {
@@ -389,5 +392,13 @@ h2 .accessibility-title {
     box-shadow: 0 0 0 20px rgba(157, 80, 255, 0.25);
     background-color: rgba(157, 80, 255, 0.25);
     */
+}
+
+.language-buttons {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 50px;
 }
 
