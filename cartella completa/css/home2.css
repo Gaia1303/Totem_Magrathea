@@ -1,0 +1,64 @@
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.descrizione {
+    background: rgba(255, 255, 255, 0.152);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-self: center;
+    width: 850px;
+    height: 1400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.rettangolo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 850px; /* Larghezza del rettangolo */
+    height: 220px; /* Altezza del rettangolo */
+    background-color: #9c50ff28;/* Colore trasparente */
+    z-index: -1; /* Porta il rettangolo dietro al contenuto */
+    border-radius: 20px 20px 0 0; /* Arrotonda i bordi */
+}
+
+.descrizione h2 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.descrizione h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.descrizione p {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.velurion-image {
+    height: 1600px;
+    width: 1600px;
+    position: absolute;
+    left: -550px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+

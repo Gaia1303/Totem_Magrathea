@@ -1,0 +1,86 @@
+.titleking {
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: left;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.152);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.card:focus{
+    background: rgba(170, 170, 170, 0.268);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 255)
+}
+
+.place {
+    align-items: start;
+}
+
+.card img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 3.8rem;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.card-text {
+    font-size: 2.9rem;
+    z-index: 1000;
+}
+
+.gravity {
+    background: rgba(255, 255, 255, 0.152);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cancel-button {
+    width: 850px;
+    height: 150px;
+    background-color: transparent;
+    border: 3px solid white;
+    margin: 10px;
+}
+
+.cancel-button:focus{
+    background-color: white;
+    color: black;
+}
+
+.paragraph{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.icon-idea{
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}

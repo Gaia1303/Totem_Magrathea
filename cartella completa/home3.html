@@ -8,21 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="fav.png" type="image/x-icon">
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
     
     <title>Home Velurion</title>
-    <link rel="stylesheet" href="general3.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home3.css">
 </head>
 <body>
     <!-- Intestazione -->
     <div class="header">
-        <img class="logo" src="logo.svg" alt="Logo Magrathea">
+        <img class="logo" src="img/logo.svg" alt="Logo Magrathea">
         <div id="current-time"></div>
     </div>
 
@@ -33,7 +32,7 @@
             <!-- Casella 1 -->
             <div class="col">
                 <div class="card">
-                    <img src="mappa.jpg" class="card-img-top" alt="Mappa">
+                    <img src="img/mappa.jpg" class="card-img-top" alt="Mappa Velurion">
                     <div class="card-body">
                         <h5 class="card-title">Mappa</h5>
                         <p class="card-text">Il tuo viaggio inizia qui! Naviga nella mappa interattiva e pianifica la tua prossima avventura.</p>
@@ -43,7 +42,7 @@
             <!-- Casella 2 -->
             <div class="col">
                 <div class="card">
-                    <img src="luoghi2.webp" class="card-img-top place" alt="Luoghi da scoprire">
+                    <img src="img/luoghi2.webp" class="card-img-top place" alt="Luoghi da scoprire">
                     <div class="card-body">
                         <h5 class="card-title">Luoghi da scoprire</h5>
                         <p class="card-text">Immergiti in foreste illuminate da funghi bioluminescenti ed esplora sentieri nascosti.</p>
@@ -53,7 +52,7 @@
             <!-- Casella 3 -->
             <div class="col">
                 <div class="card">
-                    <img src="cucina.jpg" class="card-img-top" alt="Cucina Galattica">
+                    <img src="img/cucina.jpg" class="card-img-top" alt="Cucina Galattica">
                     <div class="card-body">
                         <h5 class="card-title">Cucina Galattica</h5>
                         <p class="card-text">Un viaggio per i tuoi sensi! Scopri i segreti della cucina locale e assapora piatti unici dal sapore galattico</p>
@@ -63,7 +62,7 @@
             <!-- Casella 4 -->
             <div class="col">
                 <div class="card">
-                    <img src="attività2.webp" class="card-img-top" alt="Scopri le attività">
+                    <img src="img/attività2.webp" class="card-img-top" alt="Scopri le attività">
                     <div class="card-body">
                         <h5 class="card-title">Scopri le attività</h5>
                         <p class="card-text">Parchi divertimento, gare di salto sui funghi, sentieri affascinanti e tanto altro!</p>
@@ -73,11 +72,10 @@
         </div>
     
         <!-- Gravità con testo e bottone -->
-
         <div class="row mt-4">
             <div class="col">
                 <div class="gravity">
-                    <img src="icon_idea.svg" alt="Icona Lampadina" class="icon-idea">
+                    <img src="img/icon_idea.svg" alt="Icona consiglio" class="icon-idea">
                     <p class="paragraph">Prova il simulatore di gravità prima di atterrare su Velurion e scopri in anticipo cosa ti aspetta!</p>
                     <button class="cancel-button">Check gravità</button>
                 </div>
@@ -87,11 +85,11 @@
     
     <!-- Barra Navigazione -->
     <div class="navigation-bar">
-        <img class="nav" src="barra-nav.png" alt="Barra di navigazione">
-        <img class="home-button" src="home-button.png" alt="Icona Home">
-        <img class="back-button" src="back.button.png" alt="Icona per andare indietro">
-        <img class="accessibilità-button" src="accessibilità-button.png" alt="Icona accessibilità">
-        <img class="lingue-button" src="lingue-button.png" alt="Icona lingua">
+        <img class="nav" src="img/barra-nav.png" alt="Navigazione">
+        <img class="home-button" src="img/home-button.png" alt="Home">
+        <img class="back-button" src="img/back.button.png" alt="Back">
+        <img class="accessibility-button" src="img/accessibilita-button.png" alt="Accessibilita">
+        <img class="lang-button" src="img/lingue-button.png" alt="Lingue">
     </div>
 
     <!-- Bootstrap JS -->
@@ -117,11 +115,16 @@
 
         // Collegamento home button
         document.querySelector('.home-button').addEventListener('click', function () {
-          window.location.href = "../home1/index.html";
+          window.location.href = "index.html";
         });
 
-        // Collegamento lingua
+        // Collegamento lang button
         document.querySelector('.lingue-button').addEventListener('click', function () {
+          window.location.href = "#";
+        });
+
+        // Collegamento accessibility button
+        document.querySelector('.accessibility-button').addEventListener('click', function () {
           window.location.href = "#";
         });
 
