@@ -51,14 +51,107 @@
     </div>
 </div>
 
+<!-- Accessibility Modal-->
+<div class="modal fade" id="accesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg-custom" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-<!-- Barra Navigazione -->
+            <div class="modal-body">
+                <h2 class="accessibility-title">Accessibilità</h2>
+
+                <div class="container-fluid accessibility">
+                    <div class="row acces-row">
+                        <div class="column acces-card" onclick="toggleSelection(this)">
+                            <img src="img/accesIcon_1.svg" alt="Accessibility-icon">
+                            <h4 class="acces-option">Dimensione testo</h4>
+                        </div>
+                        <div class="column acces-card" onclick="toggleSelection(this)">
+                            <img src="img/accesIcon_2.svg" alt="Accessibility-icon">
+                            <h4 class="acces-option">Dimensione schermo</h4>
+                        </div>
+                        <div class="column acces-card" onclick="toggleSelection(this)">
+                            <img src="img/accesIcon_3.svg" alt="Accessibility-icon">
+                            <h4 class="acces-option">Filtri colore</h4>
+                        </div>
+                    </div>
+
+                    <div class="row acces-row">
+                        <div class="column acces-card" onclick="toggleSelection(this)">
+                            <img src="img/accesIcon_4.svg" alt="Accessibility-icon">
+                            <h4 class="acces-option">Temi a contrasto</h4>
+                        </div>
+                        <div class="column acces-card" onclick="toggleSelection(this)">
+                            <img src="img/accesIcon_5.svg" alt="Accessibility-icon">
+                            <h4 class="acces-option">Assistente vocale</h4>
+                        </div>
+                        <div class="column acces-card" onclick="toggleSelection(this)">
+                            <img src="img/accesIcon_6.svg" alt="Accessibility-icon">
+                            <h4 class="acces-option">Comandi vocali</h4>
+                        </div>
+                    </div>
+
+                    <div class="acces-buttons">
+                        <button type="button" class="cancel-button close-btn" data-bs-dismiss="modal">Annulla</button>
+                        <button type="button" class="select-button close-btn" data-bs-dismiss="modal">Conferma</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Language Modal -->
+<div class="modal fade" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg-custom" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <h2 class="language-title">Seleziona la lingua</h2>
+
+                <div class="language-list">
+                    <div class="language-item"><p>Italiano</p></div>
+                    <div class="language-item"><p>English</p></div>
+                    <div class="language-item"><p>Français</p></div>
+                    <div class="language-item"><p>Deutsch</p></div>
+                    <div class="language-item"><p>Español</p></div>
+                    <div class="language-item"><p>Português</p></div>
+                    <div class="language-item"><p>Nederlands</p></div>
+                    <div class="language-item"><p>Русский</p></div>
+                    <div class="language-item"><p>中文 (简体)</p></div>
+                    <div class="language-item"><p>日本語</p></div>
+                    <div class="language-item"><p>한국어</p></div>
+                    <div class="language-item"><p>العربية</p></div>
+                    <div class="language-item"><p>हिन्दी</p></div>
+                    <div class="language-item"><p>Türkçe</p></div>
+                    <div class="language-item"><p>Polski</p></div>
+                    <div class="language-item"><p>Svenska</p></div>
+                    <div class="language-item"><p>ไทย</p></div>
+                    <div class="language-item"><p>Ελληνικά</p></div>
+                    <div class="language-item"><p>Magyar</p></div>
+                    <div class="language-item"><p>Čeština</p></div>
+                </div>
+                <div class="language-buttons">
+                    <button type="button" class="cancel-button close-btn" data-bs-dismiss="modal">Annulla</button>
+                    <button type="button" class="select-button close-btn" data-bs-dismiss="modal">Conferma</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Barra Navigazione-->
 <div class="navigation-bar">
     <img class="nav img-fluid" src="img/barra-nav.png" alt="Navigation bar">
     <img class="home-button" src="img/home-button.png" alt="Home">
     <img class="back-button" src="img/back.button.png" alt="Back">
-    <img class="accessibility-button" src="img/accessibilità-button.png" alt="Accessibility">
-    <img class="lang-button" src="img/lingue-button.png" alt="Languages">
+    <img class="accessibility-button" src="img/accessibilità-button.png" alt="Accessibility" data-bs-toggle="modal" data-bs-target="#accesModal">
+    <img class="lang-button" src="img/lingue-button.png" alt="Languages" data-bs-toggle="modal" data-bs-target="#languageModal">
 </div>
 
 <!-- Bootstrap JS -->
@@ -76,6 +169,32 @@
     setInterval(updateTime, 60000);
     // Imposta subito l'orario all'inizio
     updateTime();
+
+    //Accessibility modal script
+    const cards = document.querySelectorAll('.acces-card');
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            if (card.classList.contains('selected')) {
+                card.classList.remove('selected');
+            } else {
+                cards.forEach(b => b.classList.remove('selected'));
+                card.classList.add('selected');
+            }
+        });
+    });
+
+    //Language modal script
+    document.querySelectorAll('.language-item').forEach(item => {
+        item.addEventListener('click', function() {
+            // Controlla se l'elemento è già selezionato
+            if (this.classList.contains('selected')) {
+                this.classList.remove('selected'); // Se è selezionato, lo deseleziona
+            } else {
+                document.querySelectorAll('.language-item').forEach(el => el.classList.remove('selected'));
+                this.classList.add('selected'); // Se non è selezionato, lo seleziona
+            }
+        });
+    });
 
 </script>
 
