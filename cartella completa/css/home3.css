@@ -61,7 +61,7 @@ p {
     margin-top: 15px;
 }
 
-.cancel-button {
+.gravitybutton {
     width: 850px;
     height: 150px;
     background-color: transparent;
@@ -69,7 +69,7 @@ p {
     margin: 10px;
 }
 
-.cancel-button:focus{
+.gravitybutton:focus{
     background-color: white;
     color: black;
 }
