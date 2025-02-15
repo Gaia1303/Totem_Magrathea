@@ -30,21 +30,21 @@
 <h2>Orari e trasporti</h2>
 <h3>Seleziona la tua stazione di destinazione</h3>
 
-<div class="scelta-sat">
-    <div class="sat-velurion">
-        <img class="img-sat" src="img/aurora-nexus.png" alt="stazione di aurora nexus">
+<div class="selection">
+    <div class="choice">
+        <img class="img-sat" src="img/aurora-nexus-new.png" alt="stazione di aurora nexus">
         <h3 class="title-sat">Aurora Nexus</h3>
         <button class="select-button" onclick="window.location.href='partenze-arrivi.html';">Seleziona</button>
     </div>
 
-    <div class="sat-kalyton">
-        <img class="img-sat" src="img/stellark.png" alt="stazione di Stellark">
+    <div class="choice">
+        <img class="img-sat" src="img/stellark-new.png" alt="stazione di Stellark">
         <h3 class="title-sat">Stellark</h3>
         <button class="select-button">Seleziona</button>
     </div>
 
-    <div class="sat-hielo">
-        <img class="img-sat" src="img/nebrion.png" alt="paesaggio di Nebrion">
+    <div class="choice">
+        <img class="img-sat" src="img/nebrion-new.png" alt="paesaggio di Nebrion">
         <h3 class="title-sat">Nebrion</h3>
         <button class="select-button">Seleziona</button>
     </div>
@@ -147,8 +147,8 @@
 <!-- Barra Navigazione -->
 <div class="navigation-bar">
     <img class="nav img-fluid" src="img/barra-nav.png" alt="Navigation bar">
-    <img class="home-button" src="img/home-button.png" alt="Home">
-    <img class="back-button" src="img/back.button.png" alt="Back">
+    <img class="home-button" src="img/home-button.png" alt="Home" onclick="window.location.href='index.html';">
+    <img class="back-button" src="img/back.button.png" alt="Back" onclick="window.location.href='scelta-satelliti.html';">
     <img class="accessibility-button" src="img/accessibilità-button.png" alt="Accessibility" data-bs-toggle="modal" data-bs-target="#accesModal">
     <img class="lang-button" src="img/lingue-button.png" alt="Languages" data-bs-toggle="modal" data-bs-target="#languageModal">
 </div>
@@ -196,6 +196,25 @@
                 document.querySelectorAll('.language-item').forEach(el => el.classList.remove('selected'));
                 this.classList.add('selected'); // Se non è selezionato, lo seleziona
             }
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".select-button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                // Rimuove il bordo da tutti i div .choice
+                document.querySelectorAll(".choice").forEach(choice => {
+                    choice.style.border = "none";
+                });
+
+                // Trova il div .choice associato al bottone cliccato e aggiunge il bordo
+                const choiceDiv = this.closest(".choice");
+                if (choiceDiv) {
+                    choiceDiv.style.border = "10px solid rgba(255, 255, 255, 0.5)";
+                }
+            });
         });
     });
     

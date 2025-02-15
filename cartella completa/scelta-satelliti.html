@@ -31,21 +31,21 @@
 <h2>Orari e trasporti</h2>
 <h3>Seleziona il tuo satellite di destinazione</h3>
 
-<div class="scelta-sat">
-    <div class="sat-velurion">
-        <img class="img-sat" src="img/velurion.png" alt="paesaggio di Velurion">
+<div class="selection">
+    <div class="choice">
+        <img class="img-sat" src="img/velurion-new.png" alt="paesaggio di Velurion">
         <h3 class="title-sat">Velurion</h3>
         <button class="select-button" onclick="window.location.href='scelta-stazioni.html';">Seleziona</button>
     </div>
 
-    <div class="sat-kalyton">
-        <img class="img-sat" src="img/kalyton.png" alt="paesaggio di Kalyton">
+    <div class="choice">
+        <img class="img-sat" src="img/kalyton-new.png" alt="paesaggio di Kalyton">
         <h3 class="title-sat">Kalyton</h3>
         <button class="select-button">Seleziona</button>
     </div>
 
-    <div class="sat-hielo">
-        <img class="img-sat" src="img/hielo.png" alt="paesaggio di Velurion">
+    <div class="choice">
+        <img class="img-sat" src="img/hielo-new.png" alt="paesaggio di Velurion">
         <h3 class="title-sat">Hielo</h3>
         <button class="select-button">Seleziona</button>
     </div>
@@ -148,8 +148,8 @@
 <!-- Barra Navigazione-->
 <div class="navigation-bar">
     <img class="nav img-fluid" src="img/barra-nav.png" alt="Navigation bar">
-    <img class="home-button" src="img/home-button.png" alt="Home">
-    <img class="back-button" src="img/back.button.png" alt="Back">
+    <img class="home-button" src="img/home-button.png" alt="Home" onclick="window.location.href='index.html';">
+    <img class="back-button" src="img/back.button.png" alt="Back" onclick="window.location.href='index.html';">
     <img class="accessibility-button" src="img/accessibilità-button.png" alt="Accessibility" data-bs-toggle="modal" data-bs-target="#accesModal">
     <img class="lang-button" src="img/lingue-button.png" alt="Languages" data-bs-toggle="modal" data-bs-target="#languageModal">
 </div>
@@ -193,6 +193,25 @@
                 document.querySelectorAll('.language-item').forEach(el => el.classList.remove('selected'));
                 this.classList.add('selected'); // Se non è selezionato, lo seleziona
             }
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".select-button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                // Rimuove il bordo da tutti i div .choice
+                document.querySelectorAll(".choice").forEach(choice => {
+                    choice.style.border = "none";
+                });
+
+                // Trova il div .choice associato al bottone cliccato e aggiunge il bordo
+                const choiceDiv = this.closest(".choice");
+                if (choiceDiv) {
+                    choiceDiv.style.border = "10px solid rgba(255, 255, 255, 0.5)";
+                }
+            });
         });
     });
 

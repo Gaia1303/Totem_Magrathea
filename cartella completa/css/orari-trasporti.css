@@ -1,9 +1,9 @@
-.scelta-sat {
+.selection {
     display: flex;
     flex-direction: column;
 }
 
-.sat-velurion, .sat-kalyton, .sat-hielo {
+.choice {
     width: 100%;
     height: 605px;
     border-radius: 20px;
@@ -18,6 +18,8 @@
     right: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    mask-image: linear-gradient(120deg, transparent 20%, black 100%);
+    -webkit-mask-image: linear-gradient(120deg, transparent 20%, black 100%);
 }
 
 .title-sat {
@@ -83,14 +85,4 @@
 
 .track-img {
     width: 30%;
-}
-
-h2, h3 {
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-h3 {
-    margin-top: 60px;
 }
