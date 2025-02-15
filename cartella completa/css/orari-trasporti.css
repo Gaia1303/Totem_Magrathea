@@ -77,3 +77,13 @@
 .track-img {
     width: 30%;
 }
+
+h2, h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    margin-top: 60px;
+}
