@@ -67,7 +67,7 @@ html, body {
 .pointer-2 {
     position: absolute;
     top: 60%;
-    left: 20%;
+    left: 25%;
 }
 
 .pointer-3 {
@@ -108,4 +108,61 @@ html, body {
 
 .zoom-controls button:active {
     transform: scale(0.95);
+}
+
+.pointer-wrapper {
+    position: absolute;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.pointer {
+    transition: transform 0.3s ease;
+}
+
+.pointer:hover {
+    transform: scale(1.2);
+}
+
+.popup {
+    position: absolute;
+    width: 900px;
+    height: 850px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 4rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+}
+
+.select-button {
+    width: max-content;
+    align-self: center;
+}
+
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+.popup img {
+    width: 81%;
+    align-self: center;
+    border-radius: 20px;
 }
