@@ -1,0 +1,136 @@
+/* Imposta la dimensione fissa della pagina */
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('../img/Sfondo.png');
+}
+
+/* La mappa deve coprire esattamente 2000x3000 */
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#map::before {
+    content: ""; /* Necessario per creare l'elemento pseudo */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    z-index: 1000; /* Assicura che l'overlay sia sopra l'immagine */
+}
+
+#map::after {
+    content: ""; /* Necessario per creare l'elemento pseudo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+    z-index: 1000; /* Assicura che l'overlay sia sopra l'immagine */
+}
+
+/* Intestazione sopra la mappa */
+.header {
+    z-index: 1000;
+}
+
+/* Barra di navigazione sopra la mappa */
+.navigation-bar {
+    z-index: 1000;
+}
+
+.leaflet-control-attribution {
+    display: none !important;
+}
+
+.custom-zoom-controls {
+    position: absolute;
+    bottom: 300px; /* Regola la distanza dalla barra di navigazione */
+    right: 50px; /* Posiziona in basso a destra */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1001;
+}
+
+/* Stile dei pulsanti di zoom */
+.zoom-btn {
+    width: 180px;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+    color: white;
+    font-size: 4.7rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.zoom-btn:hover {
+    background: rgba(156, 0, 138, 0.485);
+}
+
+/* Personalizza il popup di Leaflet */
+.custom-popup {
+    text-align: center;
+    max-width: 700px;
+    padding: 30px;
+    margin: 0px;
+    border-radius: 40px; /* Arrotonda i bordi */
+    color: rgb(0, 0, 0); /* Assicura che il testo sia leggibile */
+}
+
+.leaflet-popup-content-wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+/* Ingrandisce l'immagine nel popup */
+.popup-image {
+    width: 100%; /* Occupa tutta la larghezza del popup */
+    max-width: 650px; /* Limite massimo */
+    height: auto;
+    border-radius: 10px; /* Arrotonda gli angoli */
+    margin-top: 10px;
+}
+
+/* Ingrandire la "X" del popup */
+.leaflet-popup-close-button {
+    font-size: 4rem !important; /* Aumenta la dimensione della X */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0) !important; 
+    border-radius: 50%;
+    right: 40px !important;
+    top: 30px !important;
+    transition: all 0.3s;
+}
+
+.button-map {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: left;
+    font-family: "Exo";
+}
+
+h4 {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
