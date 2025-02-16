@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="css/orari-trasporti.css">
 </head>
 <body>
+    
 <!-- Intestazione -->
 <div class="header">
-    <img class="logo" src="img/logo.png">
+    <img class="logo" src="img/logo.png" onclick="window.location.href='index.html';">
     <div id="current-time"></div>
 </div>
 
@@ -185,8 +186,8 @@
 <!-- Barra Navigazione-->
 <div class="navigation-bar">
     <img class="nav img-fluid" src="img/barra-nav.png" alt="Navigation bar">
-    <img class="home-button" src="img/home-button.png" alt="Home">
-    <img class="back-button" src="img/back.button.png" alt="Back">
+    <img class="home-button" src="img/home-button.png" alt="Home" onclick="window.location.href='index.html';">
+    <img class="back-button" src="img/back.button.png" alt="Back" onclick="window.location.href='scelta-stazioni.html';">
     <img class="accessibility-button" src="img/accessibilità-button.png" alt="Accessibility" data-bs-toggle="modal" data-bs-target="#accesModal">
     <img class="lang-button" src="img/lingue-button.png" alt="Languages" data-bs-toggle="modal" data-bs-target="#languageModal">
 </div>
@@ -256,8 +257,8 @@
         window.history.back();
     });
 
-            //Accessibility modal script 
-            const cards = document.querySelectorAll('.acces-card');
+    //Accessibility modal script 
+    const cards = document.querySelectorAll('.acces-card');
     cards.forEach(card => {
         card.addEventListener('click', () => {
             if (card.classList.contains('selected')) {

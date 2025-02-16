@@ -77,7 +77,7 @@
                 <div class="gravity">
                     <img src="img/icon_idea.svg" alt="Icona consiglio" class="icon-idea">
                     <p class="paragraph">Prova il simulatore di gravità prima di atterrare su Velurion e scopri in anticipo cosa ti aspetta!</p>
-                    <button class="cancel-button">Check gravità</button>
+                    <button class="cancel-button gravitybutton gravitypage">Check gravità</button>
                 </div>
             </div>
         </div>
@@ -237,7 +237,7 @@
 
         // Collegamento Mappa
         document.querySelector('.map').addEventListener('click', function () {
-            window.location.href = "Mappa.html";
+            window.location.href = "Mappetta.html";
         });
 
         // Collegamento Luoghi
@@ -253,6 +253,11 @@
         // Collegamento Attivita
         document.querySelector('.activity').addEventListener('click', function () {
             window.location.href = "attività.html";
+        });
+
+        // Collegamento Check gravità
+        document.querySelector('.gravitypage').addEventListener('click', function () {
+            window.location.href = "gravity-check.html";
         });
 
     </script>
