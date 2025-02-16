@@ -1,5 +1,6 @@
 .titleking {
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 p {
@@ -58,7 +59,7 @@ p {
     display: flex;
     height: 300px;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .gravitybutton {
