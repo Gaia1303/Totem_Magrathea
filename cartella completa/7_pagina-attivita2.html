@@ -17,6 +17,7 @@
   <title>Avventura a Fungolandia</title>
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/attivita-dettaglio.css">
+  <link rel="stylesheet" href="css/gravity-check.css">
 
 </head>
 <body>
@@ -61,9 +62,22 @@
 
 <div class="buttons-section">
   <button class="cancel-button">Annulla</button>
-  <button class="select-button">Conferma</button>
+  <button class="select-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Conferma</button>
 </div>
 
+<!-- Modal prenotazione -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog custom-modal-size">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body-gravity text-center">
+              <p>La tua prenotazione è stata confermata!</p>
+          </div>
+      </div>
+  </div>
+</div>
 
 <!-- Accessibility Modal-->
 <div class="modal fade" id="accesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
