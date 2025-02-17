@@ -317,11 +317,6 @@ h2 .accessibility-title {
     border: 5px solid rgba(255, 255, 255, 1);
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.25);
     background-color: rgba(255, 255, 255, 0.4);
-    /*
-    border: 3px solid rgba(157, 80, 255, 1);
-    box-shadow: 0 0 0 20px rgba(157, 80, 255, 0.25);
-    background-color: rgba(157, 80, 255, 0.25);
-    */
 }
 
 .language-buttons {
