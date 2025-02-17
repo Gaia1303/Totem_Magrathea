@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%; /* Assicura che il body si espanda oltre la viewport */
+    min-height: 100%; 
 }
 
 body {
@@ -85,22 +85,22 @@ p {
 .info-grid {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 1fr; /* Inizialmente, una sola colonna per il titolo */
+    grid-template-columns: 1fr; 
     gap: 0;
     text-align: left;
-    border-collapse: separate; /* Permette di usare border-radius */
-    border-radius: 20px; /* Bordo smussato di 20px */
-    overflow: hidden; /* Nasconde gli angoli smussati */
-    border: 1px solid #ddd; /* Aggiungi un bordo sottile per visibilità */
+    border-collapse: separate; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    border: 1px solid #ddd; 
 }
 
 h3 {
-    grid-column: span 4; /* Occupa tutte le colonne */
+    grid-column: span 4; 
     text-align: center;
-    background-color: rgb(157, 80, 255); /* Cambiato in viola */
+    background-color: rgb(157, 80, 255); 
     color: white;
     padding: 10px;
-    border-radius: 20px 20px 0 0; /* Smussa solo gli angoli superiori */
+    border-radius: 20px 20px 0 0; 
     margin: 0;
 }
 
@@ -108,7 +108,8 @@ h3 {
     margin: 0;
     padding: 23px;
     padding-left: 300px;
-    background-color: rgba(255, 255, 255, 0.3); /* Sfondo bianco con trasparenza al 33% */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
     text-align: left;
     color: white;
     border: none;
@@ -117,11 +118,11 @@ h3 {
 }
 
 /* Selettore per la seconda riga, per cambiare il colore di fondo */
-.info-grid p:nth-child(6), /* CAPX 158 */
-.info-grid p:nth-child(7), /* ZENTHRA */
-.info-grid p:nth-child(8), /* 13:12 */
-.info-grid p:nth-child(9) { /* Gate 5 */
-    background-color: rgba(255, 255, 255, 0.5); /* Trasparenza del 50% */
+.info-grid p:nth-child(6),
+.info-grid p:nth-child(7), 
+.info-grid p:nth-child(8), 
+.info-grid p:nth-child(9) { 
+    background-color: rgba(255, 255, 255, 0.5); 
 }
 
 /* Imposta 4 colonne dopo l'H3 */
