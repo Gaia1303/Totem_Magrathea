@@ -6,7 +6,7 @@ p {
     text-align: left;
 }
 
-.descrizione {
+.description {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -23,7 +23,7 @@ p {
     z-index: -1;
 }
 
-.rettangolo {
+.rectangle {
     position: absolute;
     top: 0;
     left: 50%;
@@ -35,17 +35,17 @@ p {
     border-radius: 20px 20px 0 0; /* Arrotonda i bordi */
 }
 
-.descrizione h2 {
+.description h2 {
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.descrizione h4 {
+.description h4 {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.descrizione p {
+.description p {
     margin-bottom: 80px;
     text-align: center;
 }
