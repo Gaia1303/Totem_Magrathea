@@ -6,8 +6,10 @@
 .choice {
     width: 100%;
     height: 605px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.33); /* Valore alpha da 0 a 1 */
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0.2); /* Valore alpha da 0 a 1 */
     margin-top: 100px;
     position: relative;
 }
@@ -37,6 +39,11 @@
     border: 3px solid #9D50FF;
 }
 
+.selection-button:focus{
+    background-color: #442370;
+    border: 3px solid #ffffff;
+}
+
 .departures-list {
     margin-top: 100px;
     width: 100%;
@@ -48,7 +55,8 @@
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
-    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
     margin-bottom: 3rem;
     padding-right: 20px;
     padding-left: 20px;
@@ -59,7 +67,7 @@
 .trans-code {
     padding: 75px;
     margin: 0px;
-    border-radius: 30px;
+    border-radius: 15px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
     width: 25%;
     text-align: center;
@@ -68,7 +76,7 @@
 .gate {
     padding: 75px;
     margin: 0px;
-    border-radius: 30px;
+    border-radius: 15px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08));
     width: 20%;
     text-align: center;
