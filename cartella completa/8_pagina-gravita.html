@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/gravity-check.css">
 </head>
 <body>
+
 <!-- Intestazione -->
 <div class="header">
     <img class="logo" src="img/logo.png" alt="logo">
@@ -35,7 +36,6 @@
     <button class="cancel-button">Annulla</button>-->
 </div>
 
-
 <!-- Glassmorphism -->
 <div class="cont-board">
 <div class="glassmorphism-gravity">
@@ -49,7 +49,6 @@
         </button>
     </div>
 </div>
-
 
     <!-- Modal gravità -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -65,11 +64,6 @@
             </div>
         </div>
     </div>
-        </div>
-
-
-
-
 
 <div class="other-planets">
     <h3>Prova la gravità sugli <br>altri satelliti</h3>
@@ -171,11 +165,6 @@
     </div>
 </div>
 
-
-
-
-
-
 <!-- Barra Navigazione -->
 <div class="navigation-bar">
     <img class="nav img-fluid" src="img/barra-nav.png" alt="Navigation bar">
@@ -205,7 +194,8 @@
     document.querySelector('.back-button').addEventListener('click', function () {
         window.history.back();
     });
-    <!-- Accessibility modal script-->
+    
+    //Accessibility modal script
     const cards = document.querySelectorAll('.acces-card');
     cards.forEach(card => {
         card.addEventListener('click', () => {
