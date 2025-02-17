@@ -3,17 +3,17 @@ p {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.152);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.2);
     color: white;
     overflow: hidden;
     margin-top: 15px;
 }
 
+/*
 .card:focus{
     background: rgba(170, 170, 170, 0.268);
     backdrop-filter: blur(50px);
@@ -21,10 +21,7 @@ p {
     border-radius: 20px;
     border: 5px solid rgb(255, 255, 255)
 }
-
-.place {
-    align-items: start;
-}
+*/
 
 .card img {
     height: 550px;
