@@ -50,14 +50,21 @@ p {
     text-align: center;
 }
 
+@keyframes slow-rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 .velurion-image {
     height: 1600px;
     width: 1600px;
     position: absolute;
-    left: -550px;
+    left: 180px;
     top: 50%;
-    transform: translateY(-50%);
-    margin: 0 !important;
-    padding: 0 !important;
+    transform-origin: center;
+    animation: slow-rotate 40s linear infinite;
 }
-
