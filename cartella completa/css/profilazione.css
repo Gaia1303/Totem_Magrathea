@@ -11,9 +11,10 @@
 
 .content-card {
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.2);
     padding: 9rem;
     max-width: 75%;
     width: 100%;
@@ -57,9 +58,10 @@
     align-items: center;
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.2);
     padding: 3rem;
     width: 500px;
     height: 600px;
@@ -119,9 +121,10 @@
 
 .content-card-1, .content-card-2 {
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.2);
     padding: 9rem;
     max-width: 60%;
     width: 100%;
