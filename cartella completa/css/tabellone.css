@@ -78,10 +78,6 @@ p {
     align-items: center;
 }
 
-.nome-pianeta {
-    background-color: blueviolet;
-}
-
 .info-grid {
     margin-top: 60px;
     display: grid;
