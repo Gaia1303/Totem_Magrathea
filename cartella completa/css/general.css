@@ -80,6 +80,11 @@ button {
     color: black;
 }
 
+.select-button:focus{
+    background-color: #442370;
+    border: 3px solid #ffffff;
+}
+
 #current-time {
     font-size: 3.5rem;
     font-family: 'Audiowide', sans-serif;
