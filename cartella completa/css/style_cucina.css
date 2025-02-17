@@ -96,7 +96,7 @@ ul {
 /* Second slider specific features*/
 
 .slider-2 {
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     margin-top: 50px;
@@ -168,10 +168,10 @@ ul {
     border-radius: 20px;
     border: 3px solid rgba(255, 255, 255, 0.2);
      */
-    background-color: rgba(45, 45, 45, 0.5);
-    border: rgba(45, 45, 45, 45) solid 0.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     color: white;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     border-radius: 20px;
     flex: 1;
     display: flex;
