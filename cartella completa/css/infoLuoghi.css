@@ -212,7 +212,7 @@ button {
     justify-content: center;
 }
 
-h4 {
+h4, .titleh4 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -222,6 +222,8 @@ h4 {
     color: white;
     padding: 50px;
     text-shadow: black 5px 5px 5px;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 3.5rem;
 }
 
 .pointer {
